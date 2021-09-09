@@ -31,9 +31,8 @@ div.categorie
 div.contenu
 {
     background-color: white;
-    margin: 60px 10% 80px 10%;
-    padding: 0 30px 30px 30px;
-    min-width: 380px;
+    margin: 30px 8px 40px 8px;
+    padding: 0 8px 20px 8px;
     overflow: visible;
     box-shadow: 0 2px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -73,7 +72,7 @@ div.info table
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 40px;
     background-color: rgba(47, 94, 95, 0.63);
     color: white;
 }
@@ -86,31 +85,28 @@ div.info img{
 
 div.info table td{
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: top;
 }
 div.info table th{
     vertical-align: bottom;
     padding: 5px;
+    font-size: 14px;
 }
 
 
 div.colonne
 {
-    width: 45%;
+    width: 100%;
     margin-top: 10px;
 }
 
 div.colonne1{
     display: inline-block;
-    margin-right: 10%;
+   
 }
 
-div.colonne2{
-    
-    float: right;
-    
-}
+
 
 div.colonne h2
 {
@@ -164,4 +160,52 @@ div.colonne2 td.etape_preparation
 div.colonne2 tr
 {
     height: 40px;
+}
+
+@media only screen and (min-width: 768px){
+    
+div.contenu
+{
+    
+    margin: 60px 10% 80px 10%;
+    padding: 0 30px 30px 30px;
+    min-width: 350px;
+}
+
+div.info table
+{  
+    height: 50px;
+}
+
+div.info table th{
+    vertical-align: bottom;
+    padding: 5px;
+}
+
+div.colonne2{
+    float: right;
+}
+
+div.colonne
+{
+    width: 45%;
+}
+
+div.colonne1{
+    margin-right: 10%;
+}
+
+}
+
+
+
+@media only screen and (min-width: 900px){
+div.contenu
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width: 645px;
+    }  
+
+
 }
